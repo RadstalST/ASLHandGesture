@@ -48,7 +48,7 @@ temp_words = temp_text.split(" ")
 if __name__ == "__main__":
     print("Hello, World!")
     # init camera
-    cap = cv.VideoCapture(0)
+    cap = cv.VideoCapture(1)
     # # init mediapipe
     tracker = HandTracker(maxHands=1)
     

@@ -5,7 +5,7 @@ from nltk.metrics.distance import (
     jaccard_distance,
     )
 from nltk.util import ngrams
-nltk.download('words')
+
 import pandas
 
 
