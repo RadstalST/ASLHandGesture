@@ -77,6 +77,8 @@ if __name__ == "__main__":
         output_frame = tracker.handsFinder(output_frame)
         lmList,handlist = np.array(tracker.positionFinder(output_frame))
 
+
+        ### draw text box ###
         # draw rectangle buttom of frame
         cv.rectangle(output_frame, (0, output_frame.shape[0]-50), (output_frame.shape[1], output_frame.shape[0]), (0, 0, 0), cv.FILLED)
         
@@ -85,7 +87,9 @@ if __name__ == "__main__":
         #draw last word
         text_size = cv.getTextSize(draw_text, cv.FONT_HERSHEY_SIMPLEX, 0.5, 1)
         cv.putText(output_frame, words[-1], (30+text_size[0][0], output_frame.shape[0]-20), cv.FONT_HERSHEY_SIMPLEX, 0.5, MUTED_PRIMARY_FONT_COLOUR, 1, cv.LINE_AA)
-
+        
+        
+        
         # Display the resulting frame
         cv.imshow('frame', draw(output_frame,fps=fps))
         
