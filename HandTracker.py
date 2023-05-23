@@ -1,3 +1,6 @@
+import mediapipe as mp
+import cv2 as cv
+import numpy as np
 class HandTracker():
     def __init__(self, mode=False, maxHands=2, detectionCon=0.5,modelComplexity=1,trackCon=0.5):
         self.mode = mode

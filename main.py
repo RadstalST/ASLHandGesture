@@ -1,7 +1,6 @@
 import cv2 as cv
 import numpy as np
 import time
-import mediapipe as mp
 from HandTracker import HandTracker
 
 PRIMARY_COLOUR = (85, 52, 190) # BGR 0-255 , VIVA MAGENTA
